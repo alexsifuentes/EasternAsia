@@ -34,6 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
     navLinks.forEach(link => {
     link.style.padding = '0.5rem 4rem 0.5rem 2rem';
     link.style.fontWeight = 'bold';
-    link.style.fontfamily = 'Arial, sans-serif';
+    link.style.fontFamily = 'Arial, sans-serif';
 });
 });
