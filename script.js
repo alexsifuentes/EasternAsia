@@ -35,5 +35,32 @@ document.addEventListener("DOMContentLoaded", function() {
     link.style.padding = '0.5rem 4rem 0.5rem 2rem';
     link.style.fontWeight = 'bold';
     link.style.fontFamily = 'Arial, sans-serif';
+    });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', (async (e) => {
+            e.preventDefault();
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                if (response.ok) {
+                    alert('Thank you for your submission!');
+                    form.reset();
+                } else {
+                    alert('There was a problem submitting your form. Please try again.');
+                }
+            } catch (error) {
+                alert('There was a problem submitting your form. Please try again.');
+            }
+        }
+        ));
+    });
 });
