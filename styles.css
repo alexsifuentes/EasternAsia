@@ -1,0 +1,586 @@
+/*Started on 6/13/2024
+Last Updated on 6/30/2024*/
+
+
+/*Home.html*/
+    /*|*/
+    /*v*/
+
+/*dark mode and background color*/
+:root {
+    --background-color: #335C67;
+    --text-color: white;
+    --navbar-bg-color: #44475a;
+    --button-bg-color: #6272a4;
+    --button-text-color: #f8f8f2;
+    --button-border-color: #282a36;
+    --button-hover-bg-color: #53618b;
+    --link-color: white;
+}
+
+.dark-theme {
+    --background-color: #FFF3B0;
+    --text-color: black;
+    --navbar-bg-color: #f8f9fa;
+    --button-bg-color: #007bff;
+    --button-text-color: white;
+    --button-border-color: #007bff;
+    --button-hover-bg-color: #0056b3;
+    --link-color: blue;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+}
+
+#dark-mode-button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: 1px solid var(--button-border-color);
+}
+
+#dark-mode-button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+
+
+/*title*/
+section#title h2{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -3em;
+    position: relative;
+}
+
+.flag{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    max-width: 150px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/*issue section*/
+
+#issue-section {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#issue-section h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#issue-section ul {
+    padding-left: 20px;
+    list-style-position: inside;
+    position: sticky;
+    top: 20px; 
+}
+
+
+#issue-section ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*carousel*/
+.carousel-inner img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.carousel-inner {
+    width: 100%; 
+    height: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgb(255, 255, 255); 
+}
+
+/*News*/
+
+#news-section h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#news-section img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+#news-section {
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#news-section a {
+    font-size: 1.2rem;
+    font-weight: 850;
+}
+
+/*foreign Residents living abroad section*/
+
+#foreign_resident h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#foreign_resident h3 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.Video {
+    list-style-type: none;
+}
+
+/*money.html*/
+    /*|*/
+    /*v*/
+
+/*Money Section*/
+
+#money {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#money h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#money ul {
+    list-style-position: inside;
+    position: sticky;
+    top: 20px; 
+    padding-right: 5em;
+}
+
+
+#money ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 5em;
+}
+
+#money figcaption {
+    text-align: right;
+    margin-right: 12em;
+}
+
+#money img {
+    max-width: 150%;
+}
+
+/*global section*/
+
+#global h2 {
+    font-weight: bold;
+    margin: 1em;
+}
+
+#global img{
+margin: 1em;
+}
+
+#global ul {
+    list-style-type: none;
+}
+
+
+  /*feedback.html*/
+        /*|*/
+        /*v*/
+
+/*question*/
+
+#question {
+    margin-top: 10em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 2em;
+}
+
+#registration fieldset {
+    width: 100%;
+    border: none;
+    padding: 1em;
+}
+
+form {
+    border-radius: 5%;
+    border-color: black;
+}
+
+#questions label {
+    display: block;
+    float: left;
+    min-width: 250px;
+    text-align: right;
+    margin-right: 1em;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#questions input {
+    display: block;
+    float: left;
+    height: 30px;
+    width: calc(100% - 300px);
+    margin-bottom: 1em;
+    clear: right;
+    outline: none !important;
+    border: solid 1px #333;
+    border-radius: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+button {
+    margin-top: 2em;
+}
+
+/*feedback*/
+
+#feedback {
+    margin-top: 10em;
+}
+
+#feedback label {
+    display: block;
+    float: left;
+    min-width: 250px;
+    text-align: right;
+    margin-right: 1em;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#feedback input {
+    display: block;
+    float: left;
+    height: 30px;
+    width: calc(100% - 300px);
+    margin-bottom: 1em;
+    clear: right;
+    outline: none !important;
+    border: solid 1px #333;
+    border-radius: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+    /*arrival.html*/
+        /*|*/
+        /*v*/
+ 
+/*before-arrival*/
+
+#before-arrival {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+        
+#before-arrival h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#before-arrival ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 5em;
+}
+
+/*on arrival*/
+        
+#on-arrival ul {
+    list-style-position: inside;
+    position: sticky;
+    top: 20px; 
+    padding-right: 5em;
+}
+  
+#on-arrival h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+        
+#on-arrival ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 5em;
+}
+
+
+
+#on-arrival img {
+    max-width: 80%;
+    max-height: 80%;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+#on-arrival figcaption {
+    text-align: center;
+    margin-bottom: 0.3em;
+    margin-right: 8em;
+}
+
+/*after arrival*/
+
+#after-arrival {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+        
+#after-arrival h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#after-arrival ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 5em;
+}
+
+#after-arrival img {
+    max-width: 120%;
+    max-height: 120%;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+#after-arrival figcaption {
+    text-align: center;
+    margin-bottom: 0.3em;
+    margin-right: -5em;
+}
+
+/*experience.html*/
+        /*|*/
+        /*v*/
+
+#personal-experience {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#personal-experience h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#personal-experience p {
+    font-size: large;
+    font-weight: 600;
+}
+
+#personal-experience img {
+    margin-left: 18em;
+    margin-top: 5em;
+}
+
+  /*transport.html*/
+        /*|*/
+        /*v*/
+
+
+/*japan transport*/
+
+#japan-transportation {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#japan-transportation h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#japan-transportation ul li{
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 5em;
+}
+
+#japan-transportation img{
+    max-width: 80%;
+    max-height: 80%;
+    margin: 2em;
+    align-items: center;
+}
+
+#japan-transportation figcaption {
+    text-align: center;
+    margin-bottom: 0.3em;
+    margin-right: 6em;
+}
+
+/*Korea Transport*/
+
+#korea-transportation {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#korea-transportation h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#korea-transportation ul li{
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 5em;
+}
+
+#korea-transportation figcaption {
+    text-align: center;
+    margin-bottom: 0.3em;
+    margin-right: 6em;
+}
+
+#korea-transportation img{
+    max-width: 80%;
+    max-height: 80%;
+    margin: 2em;
+    align-items: center;
+}
+    /*ettique.html*/
+        /*|*/
+        /*v*/
+
+/*food etiquette*/
+
+#food-etiquette h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+        
+#food-etiquette ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 5em;
+}
+        
+#food-etiquette img {
+    max-width: 120%;
+    max-height: 120%;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+}
+        
+#food-etiquette figcaption {
+    text-align: center;
+    margin-bottom: 0.3em;
+    margin-right: -5em;
+}
+
+/*phrases*/
+
+#phrases h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+        
+#phrases ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 5em;
+}
+
+#phrases h3 {
+    font-weight: bolder;
+}
+
+#phrases figcaption {
+    text-align: center;
+    margin-bottom: 0.3em;
+    margin-right: -10em;
+}
+
+/*Links*/
+a:link {
+    color: blue;
+  }
+
+a:visited {
+    color: purple;
+  }
+
+  a:hover {
+    color: darkgreen;
+  }
+
+/*footer section*/
+#footer-section {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5em;
+  }
